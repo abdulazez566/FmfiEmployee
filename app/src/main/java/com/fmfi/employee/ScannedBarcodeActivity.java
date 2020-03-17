@@ -8,6 +8,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.SparseArray;
 import android.view.SurfaceHolder;
+
 import android.view.SurfaceView;
 import android.view.View;
 import android.widget.Button;
@@ -38,6 +39,8 @@ public class ScannedBarcodeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scan_barcode);
+/*        MyScanningView surfaceView = findViewById(R.id.surfaceView);
+        surfaceView.startAnimation();*/
 
         initViews();
     }
@@ -46,8 +49,6 @@ public class ScannedBarcodeActivity extends AppCompatActivity {
         txtBarcodeValue = findViewById(R.id.txtBarcodeValue);
         surfaceView = findViewById(R.id.surfaceView);
         btnAction = findViewById(R.id.btnAction);
-
-
         btnAction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
