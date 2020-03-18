@@ -92,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
         UploadImageToServer = (Button) findViewById(R.id.button2);
         imageName = (EditText)findViewById(R.id.editText);
         scanQr = (Button)findViewById(R.id.scanQr);
+        imageName.setEnabled(false);
 
 
         //Get the bundle
