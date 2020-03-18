@@ -8,58 +8,51 @@
     android:background="#ffffff"
     >
 
-<!--    <ImageView
+    <ImageView
         android:layout_width="fill_parent"
-        android:layout_height="270dp"
+        android:layout_height="200dp"
         android:id="@+id/imageView"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />-->
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:src="@drawable/fmfilogo"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@+id/btnAction"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
-        android:id="@+id/imageView"
-
+        android:scaleX="0.8"
+        android:scaleY="0.8"
         />
+
     <Button
-        android:text="Click here to capture image using camera"
+        android:id="@+id/scanQr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:layout_below="@+id/imageView"
+        android:text="Scan Qr"
         android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
-        />
+        android:layout_below="@+id/imageView"/>
+
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button"
+        android:layout_below="@+id/scanQr"
         android:layout_centerHorizontal="true"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="Enter Image Name"
+        android:hint="Reference Number"
         android:gravity="center"
         android:layout_marginTop="10dp"
         android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
         />
 
     <Button
-        android:id="@+id/scanQr"
+        android:text="Capture image using camera"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="ScanQr"
-        android:layout_below="@+id/editText"
+        android:id="@+id/button"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText"
         android:layout_marginTop="10dp"
         android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
-
         />
     <Button
         android:id="@+id/button2"

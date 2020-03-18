@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         CaptureImageFromCamera = (Button)findViewById(R.id.button);
-        ImageViewHolder = (ImageView)findViewById(R.id.imageView);
+//        ImageViewHolder = (ImageView)findViewById(R.id.imageView);
         UploadImageToServer = (Button) findViewById(R.id.button2);
         imageName = (EditText)findViewById(R.id.editText);
         scanQr = (Button)findViewById(R.id.scanQr);
@@ -208,7 +208,8 @@ public class MainActivity extends AppCompatActivity {
                 if (data.getData() == null) {
                     Bundle d = data.getExtras();
                     bitmap = (Bitmap) d.get("data");
-                    ImageViewHolder.setImageBitmap(bitmap);
+                    //abd
+//                    ImageViewHolder.setImageBitmap(bitmap);
                     Toast.makeText(this, "fff", Toast.LENGTH_SHORT).show();
 
 
@@ -260,7 +261,8 @@ public class MainActivity extends AppCompatActivity {
                         bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), uri);
 
                         // adding captured image in imageview.
-                        ImageViewHolder.setImageBitmap(bitmap);
+                        //abd
+//                        ImageViewHolder.setImageBitmap(bitmap);
 
                         //String referenceNumber = imageName.getText().toString();
                         ProgressDialog mProgressDialog;
@@ -372,7 +374,8 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this,string1,Toast.LENGTH_LONG).show();
 
                 // Setting image as transparent after done uploading.
-                ImageViewHolder.setImageResource(android.R.color.transparent);
+                //abd
+//                ImageViewHolder.setImageResource(android.R.color.transparent);
 
 
             }
