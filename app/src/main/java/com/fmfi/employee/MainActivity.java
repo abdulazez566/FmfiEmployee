@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button CaptureImageFromCamera,UploadImageToServer;
 
+    
     ImageView ImageViewHolder;
 
     EditText imageName;
