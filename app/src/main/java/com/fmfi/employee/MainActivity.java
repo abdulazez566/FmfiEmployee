@@ -216,9 +216,9 @@ public class MainActivity extends AppCompatActivity {
 
 
                     ProgressDialog mProgressDialog;
-                    mProgressDialog = new ProgressDialog(this);
+                    mProgressDialog = new ProgressDialog(this,R.style.AppCompatAlertDialogStyle);
                     mProgressDialog.setCancelable(false);
-                    mProgressDialog.setMessage("Loading");
+                    mProgressDialog.setMessage("Loading...");
                     mProgressDialog.show();
 
 
@@ -268,9 +268,9 @@ public class MainActivity extends AppCompatActivity {
 
                         //String referenceNumber = imageName.getText().toString();
                         ProgressDialog mProgressDialog;
-                        mProgressDialog = new ProgressDialog(this);
+                        mProgressDialog = new ProgressDialog(this,R.style.AppCompatAlertDialogStyle);
                         mProgressDialog.setCancelable(false);
-                        mProgressDialog.setMessage("Loading");
+                        mProgressDialog.setMessage("Loading...");
                         mProgressDialog.show();
 
 
